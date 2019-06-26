@@ -23,3 +23,6 @@ for i in range(0,r):
     d1+=arr[i][i]
     d2+=arr[i][(r-1)-i]
 print(abs(d1-d2))
+
+-----------------------
+#https://www.shortcutfoo.com/app/dojos/python-regex
