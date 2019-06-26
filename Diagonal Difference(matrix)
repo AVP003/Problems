@@ -1,0 +1,25 @@
+r=int(input())
+arr=[[0]*r]*r
+d1,d2=0,0
+for i in range(0,r):
+    arr[i]=list(map(int,input().split()))
+for i in range(0,r):
+    for j in range(0,r):
+        if j==i:
+            d1+=arr[i][j]
+        if j==((r-1)-i):
+            d2+=arr[i][j]
+print(abs(d1-d2))
+-------------------------------
+#or
+
+
+r=int(input())
+arr=[]
+d1,d2=0,0
+for i in range(0,r):
+    arr.append(list(map(int,input().split())))
+for i in range(0,r):
+    d1+=arr[i][i]
+    d2+=arr[i][(r-1)-i]
+print(abs(d1-d2))
