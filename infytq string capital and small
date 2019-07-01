@@ -1,0 +1,15 @@
+n=list(input())
+lu=[]
+ll=[]
+for i in n:
+    if i.isupper():
+        lu.append(i)
+    else:
+        ll.append(i)
+for i in sorted(set(ll)):
+    c=lu.count(i.upper())
+    if c>0 :
+        print(i.upper()*c,end="")
+        print(i*n.count(i),end="")
+    elif c==0:
+        print(i,end="")
